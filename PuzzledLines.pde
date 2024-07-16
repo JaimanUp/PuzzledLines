@@ -1,3 +1,5 @@
+import processing.dxf.*;
+
 //Tile tile = new Tile(0,0,200);
 Tile tile;
 
@@ -8,7 +10,7 @@ int grid=50;
 
 
 void setup(){
-	size(600,600);
+	size(600,600,P3D);
 
 	//rect(0,0,200,200);
 
@@ -20,6 +22,8 @@ void setup(){
 }
 
 void draw(){
+	beginRaw(DXF, "output.dxf");
+
 	stroke(0,10,200);
 	strokeWeight(3);
 	for(int i=grid;i<width-grid;i+=grid){
@@ -32,7 +36,7 @@ void draw(){
 
 
 	
-	
+	endRaw();
 	noLoop();
 }
 
