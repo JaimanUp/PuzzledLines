@@ -2,8 +2,8 @@ class Tile {
 
 
 
-	float sc=1.1;
 
+	
 	PVector position ;
 	float tileSize ;
 	PVector joints []= new PVector[4*(divider-1)];
@@ -98,8 +98,5 @@ class Tile {
 
 
 
-			void display(){
-
-			}
 		}
 
